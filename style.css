@@ -1,0 +1,158 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	background: no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	text-shadow: 1px 1px 1px black;
+	height: 100vh;
+}
+
+main {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#weather {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-self: flex-start;
+	margin-top: -20px;
+}
+
+#weather img {
+	width: 70px;
+}
+
+#preloader {
+	background: white url(./pictures/Spin-Preloader-1.gif) no-repeat center;
+	background-size: 30%;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	z-index: 100;
+}
+
+#todo-list {
+	margin: 0;
+	padding-left: 10px;
+	overflow-y: hidden;
+}
+
+#todo-list p {
+	margin: 0 0 3px 5px;
+}
+
+#todo-list p:last-child {
+	margin-bottom: 0;
+}
+
+#input-todo {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	color: #fff;
+	padding: 10px;
+	font-size: 16px;
+}
+
+#todo-container > p {
+	cursor: pointer;
+	text-align: right;
+}
+
+#crypto h4 {
+	margin: 0 0 10px 0;
+}
+#todos {
+	display: none;
+	background-color: #404040;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	position: relative;
+	padding-top: 10px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	transition: width, min-height, opacity 3s;
+}
+
+#author {
+	align-self: flex-end;
+}
+
+.top {
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 15px;
+}
+
+.time {
+	font-size: 55px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.weather-city {
+	width: 100%;
+	text-align: right;
+	margin: 0;
+	margin-top: -15px;
+}
+
+.weather-temp {
+	margin: 0;
+	margin-left: -10px;
+}
+.coin-container {
+	display: flex;
+	align-items: center;
+}
+.coin-container * {
+	margin: 0 0 5px 10px;
+}
+.icon {
+	margin: 0 0 5px 0;
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 15px;
+}
+
+.task {
+	display: flex;
+	align-items: center;
+}
+
+.opened {
+	width: 300px !important;
+	height: 170px !important;
+	opacity: 1 !important;
+}
